@@ -1,9 +1,0 @@
-TL, Como se deve desmontar uma montagem de filtração a vácuo (no 3º piso do DQ)?, Tirando a mangueira primeiro, Fechando a torneira primeiro, Deixando o meu colega de laboratório decidir, Não fazer nada e deixar a Ana arrumar no final da aula, Tirando a mangueira primeiro
-QO I, Qual é a fórmula molecular da água?, H2O2, H3O+, OH-, H2O, H2O
-QO I, Qual destes grupos é mais eletrofílico?, Ac, RC=OCl, RC=OI, RC=OEt, RC=OCl
-QO II, Qual destes adota preferencialmente uma conformação em barco?, Ciclohexano, Ciclohexeno, Mentol, O anel de 6 da cânfora, O anel de 6 da cânfora
-QO II, Qual destes é um orientador meta?, CH3, Ac, CH2CH3, Cl, Ac
-MRQ, A polimerização catalizada do transestilbeno é uma reação..., polar, pericíclica, radicalar, que não ocorre, radicalar
-MRQ, O rearranjo sigmatrópico térmico do propeno é uma reação..., pericíclica, exotérmica, radicalar, que não ocorre, que não ocorre
-BPN, Quantos carbonos tem um monoterpeno?, 2, 5, 10, 15, 10
-BPN, Qual destes pode ser um derivado de xiquimato?, Eritromicina A (antibiótico), IPP, NPP, Dopamina, Dopamina
