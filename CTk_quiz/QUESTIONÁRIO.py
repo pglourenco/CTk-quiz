@@ -7,14 +7,17 @@ import random
 
 import os
 
+PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+
 class Player:                           # 1 classe Player corresponde a 1 ficheiro
     def __init__(self, name, points: int):
         self.name = name
         self.points = points
 
-        self.file_name_first_try = rf'C:\Users\Pedro\Desktop\python\2023\tkinter(QUESTIONARIO)\#players\#{self.name}'
-        self.file_name = rf'C:\Users\Pedro\Desktop\python\2023\tkinter(QUESTIONARIO)\players\{self.name}'
-
+        self.file_name_first_try = os.path.join(
+            PROJECT_DIR, "#players", f"#{self.name}"
+        )
+        self.file_name = os.path.join(PROJECT_DIR, "players", self.name)
     
     def add_points(self, amount: int):
         self.points += amount
@@ -58,14 +61,14 @@ class Players:                          # 1 classe Players corresponde à pasta 
     
     def load_first_try(self):
         file_names = []
-        folder_path = rf'C:\Users\Pedro\Desktop\python\2023\tkinter(QUESTIONARIO)\#players'
+        folder_path = os.path.join(PROJECT_DIR, "#players")
         for file_name in os.listdir(folder_path):
             print(file_name)
             file_names.append(file_name)
         print(file_names)
 
         for file_name in file_names:
-            f = open(str(folder_path + '\\' + file_name), 'r', encoding='utf-8-sig')
+            f = open(os.path.join(folder_path, file_name), "r", encoding="utf-8-sig")
             for line in f:
                 l = line.strip().split(', ')
                 p = Player(l[0], l[1])
@@ -74,14 +77,14 @@ class Players:                          # 1 classe Players corresponde à pasta 
 
     def load(self):
         file_names = []
-        folder_path = rf'C:\Users\Pedro\Desktop\python\2023\tkinter(QUESTIONARIO)\players'
+        folder_path = os.path.join(PROJECT_DIR, "players")
         for file_name in os.listdir(folder_path):
             print(file_name)
             file_names.append(file_name)
         print(file_names)
 
         for file_name in file_names:
-            f = open(str(folder_path + '\\' + file_name), 'r', encoding='utf-8-sig')
+            f = open(os.path.join(folder_path, file_name), "r", encoding="utf-8-sig")
             for line in f:
                 l = line.strip().split(', ')
                 p = Player(l[0], l[1])
@@ -383,7 +386,7 @@ class App(ctk.CTk):
 
 
 def main():
-    gui = App(rf'C:\Users\Pedro\Desktop\python\2023\tkinter(QUESTIONARIO)\Perguntas.txt')
+    gui = App(os.path.join(PROJECT_DIR, "Perguntas.txt"))
     gui.mainloop()
 
 main()
